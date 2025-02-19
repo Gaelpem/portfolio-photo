@@ -30,9 +30,10 @@
     </header>
     
     <main>
+
         <section class="about">
             <div class="entete">
-                <h1 class="titre">———about</span></h1>
+                <h1 class="titre">———about</h1>
                  <div class="number-fleche">
                     <p>[1]</p>
                  <i id= "arrow"class="bi bi-arrow-down-circle-fill"></i>
@@ -41,6 +42,46 @@
             <p class="paragraphe">Passionate about <span class="white">photography</span> since —2020, I started by exploring street[—]photography with a film camera, which allowed me to develop and refine my artistic vision. For <span class="white">fashion</span> / photography, I use a digital [—]camera to capture sharper and more dynamic images——————.</p>
             <p class="date">©2020</p>
         </section>
+
+    <!-- SECTION WORK-->
+
+    <section class="work">
+            <div class="entete">
+                <h1 class="titre">———work</h1>
+                 <div class="number-fleche">
+                    <p>[2]</p>
+                 <i id= "arrow"class="bi bi-arrow-down-circle-fill"></i>
+                 </div>
+            </div>
+           
+            <p class="paragraphe">As I am dedicated to conveying emotions through models & capturing the <span class="white">richness</span> of colors in my images, this style[—]allows me to fully / express my artistic vision with sensitivity & <span>creativity—————.</span></p>
+
+            <div class="mot">
+
+                <p><span class="white">portraits_.</span></p>
+                <p>street-photography___.</p>
+                <p><span class="white">personals__.</span></p>
+                <p>archive————.</p>
+
+            </div>
+        </section>
+
+        <!-- SECTION PORTRAIT-->
+
+        <section class="portrait">
+            <div class="entete">
+                <h1 class="titre">———portrait_.</h1>
+                 <div class="number-fleche">
+                    <p>[001]</p>
+                 <i id= "arrow"class="bi bi-arrow-down-circle-fill"></i>
+                 </div>
+            </div>
+           <p class="paragraphe">Salma for <span class="white">widempieces</span>
+AND many more.../ </p>
+     
+
+        </section>
+
 
 
 

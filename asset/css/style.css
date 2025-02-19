@@ -52,14 +52,19 @@ span{
     color: white;
 }
 /* SECTION ABOUT */
-section.about{
-  border-radius:14px;
+section{
+  border-radius:17px;
   padding: 1.6rem 0;
-  background-color:#21478D;
   width: 100%;
   max-height: 100vh;
   color: rgba(255, 255, 255, 0.723);
 }
+
+section.about{
+background-color:#21478D;
+}  
+
+
 .entete{
     display: flex;
     justify-content: space-between;
@@ -95,6 +100,7 @@ section.about{
 .number-fleche i{
     margin-top: -1rem;
     font-size: 4rem;
+    cursor: pointer;
 }
 
 .paragraphe{
@@ -112,3 +118,26 @@ section.about{
     height: 250px;
 }
 
+
+section.work{
+ background-color:#EE2525;
+}
+
+.mot{
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 60rem;
+    font-size: 3rem;
+    height: 350px;
+}
+
+
+section.portrait{
+    background-color:#36791C;
+   }
+
+
+.portrait .paragraphe{
+    font-size: 5rem;
+}
