@@ -38,8 +38,8 @@
                  <i id= "arrow"class="bi bi-arrow-down-circle-fill"></i>
                  </div>
             </div>
-            <p class="paragraphe">Passionate about photography since —2020, I started by exploring street[—]photography with a film camera, which allowed me to develop and refine my artistic vision. For fashion / photography, I use a digital [—]camera to capture sharper and more dynamic images——————.</p>
-            <p class=>©2020</p>
+            <p class="paragraphe">Passionate about <span class="white">photography</span> since —2020, I started by exploring street[—]photography with a film camera, which allowed me to develop and refine my artistic vision. For <span class="white">fashion</span> / photography, I use a digital [—]camera to capture sharper and more dynamic images——————.</p>
+            <p class="date">©2020</p>
         </section>
 
 
