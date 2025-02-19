@@ -53,6 +53,7 @@ span{
 }
 /* SECTION ABOUT */
 section{
+    cursor: pointer;
   border-radius:17px;
   padding: 1.6rem 0;
   width: 100%;
@@ -97,11 +98,17 @@ background-color:#21478D;
 .number-fleche p{
     font-size: 2rem;
 }
-.number-fleche i{
+#arrow{
     margin-top: -1rem;
     font-size: 4rem;
-    cursor: pointer;
+    transition: transform 0.5s ease;
 }
+
+#arrow.turn{
+     transform : rotate(180deg); 
+     transition: transform 0.5s ease;
+}
+
 
 .paragraphe{
     /* border:1px solid black;  */
@@ -121,8 +128,16 @@ background-color:#21478D;
 
 section.work{
  background-color:#EE2525;
+ position: relative;
+ bottom: 25rem;
+ transition: bottom 0.5s ease;
 }
-
+section.work.down{
+    background-color:#EE2525;
+    position: relative;
+    bottom: 5rem;
+    transition: bottom 0.5s ease;
+}   
 .mot{
     /* border: 1px solid black; */
     display: inline-block;
@@ -134,10 +149,19 @@ section.work{
 
 
 section.portrait{
+    margin-top: -25rem;
     background-color:#36791C;
+    z-index: 3;
    }
 
 
 .portrait .paragraphe{
     font-size: 5rem;
 }
+
+.titre1{
+    font-size: 3rem;
+}
+  
+
+ 

@@ -70,13 +70,13 @@
 
         <section class="portrait">
             <div class="entete">
-                <h1 class="titre">———portrait_.</h1>
+                <h1 class="titre1">———portrait_.</h1>
                  <div class="number-fleche">
                     <p>[001]</p>
                  <i id= "arrow"class="bi bi-arrow-down-circle-fill"></i>
                  </div>
             </div>
-           <p class="paragraphe">Salma for <span class="white">widempieces</span>
+           <p class="paragraphe">Selma for <span class="white">widempieces</span>
 AND many more.../ </p>
      
 
