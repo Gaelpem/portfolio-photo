@@ -98,6 +98,7 @@ background-color:#21478D;
 .number-fleche p{
     font-size: 2rem;
 }
+ /* arrow */
 #arrow{
     margin-top: -1rem;
     font-size: 4rem;
@@ -105,6 +106,19 @@ background-color:#21478D;
 }
 
 #arrow.turn{
+     transform : rotate(180deg); 
+     transition: transform 0.5s ease;
+}
+
+
+
+#arrow1{
+    margin-top: -1rem;
+    font-size: 4rem;
+    transition: transform 0.5s ease;
+}
+
+#arrow1.turn{
      transform : rotate(180deg); 
      transition: transform 0.5s ease;
 }
@@ -133,8 +147,6 @@ section.work{
  transition: bottom 0.5s ease;
 }
 section.work.down{
-    background-color:#EE2525;
-    position: relative;
     bottom: 5rem;
     transition: bottom 0.5s ease;
 }   
@@ -149,9 +161,15 @@ section.work.down{
 
 
 section.portrait{
-    margin-top: -25rem;
+    position: relative;
+    bottom: 40rem;
     background-color:#36791C;
     z-index: 3;
+    transition: bottom 0.5s ease;       
+   }
+   section.portrait.down{
+    bottom: 20rem;
+    transition: bottom 0.5s ease;     
    }
 
 

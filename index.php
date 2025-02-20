@@ -50,7 +50,7 @@
                 <h1 class="titre">———work</h1>
                  <div class="number-fleche">
                     <p>[2]</p>
-                 <i id= "arrow"class="bi bi-arrow-down-circle-fill"></i>
+                 <i id= "arrow1"class="bi bi-arrow-down-circle-fill"></i>
                  </div>
             </div>
            
