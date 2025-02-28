@@ -76,16 +76,26 @@
                  <i id= "arrow"class="bi bi-arrow-down-circle-fill"></i>
                  </div>
             </div>
-           <p class="paragraphe">Selma for <span class="white">widempieces</span>
-AND many more.../ </p>
-     
+           <p class="paragraphe">Selma for <span class="white">Widempieces</span>
+           
+           <div class="img-presentation">
+                <img src="asset/img/img1.jpeg" alt="">
+                <p>[view more]</p>
+               </div>
+           <div class="image-container">
 
+               <div class="img-preview"></div>
+               <div class="indicator"></div>
+               <div class="items">
+                <div class="item"><img src="" alt=""></div>
+                <div class="item"><img src="" alt=""></div>
+                <div class="item"><img src="" alt=""></div>
+                <div class="item"><img src="" alt=""></div>
+                <div class="item"><img src="" alt=""></div>
+                <div class="item"><img src="" alt=""></div>
+               </div>
+           </div>
         </section>
-
-
-
-
-
     </main>
 
 

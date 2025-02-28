@@ -13,6 +13,7 @@
 }
 body{
     font-family: var(---font-family);
+    background-color:rgba(0, 0, 0, 0.673);
 }
 
 
@@ -25,6 +26,7 @@ header{
     max-width:100%;
     display: flex;
     justify-content: space-between;
+    color: white;
     
 }
 
@@ -38,8 +40,8 @@ nav .links li{
 }
 nav .links li a{
     text-decoration: none;
-    color: black;
-    
+    color: rgb(255, 255, 255);
+
 }
 
 main{
@@ -62,7 +64,7 @@ section{
 }
 
 section.about{
-background-color:#21478D;
+background-color:#21478d95;
 }  
 
 
@@ -79,7 +81,7 @@ background-color:#21478D;
     content: "";
     top:2.5rem; 
     left: 17.5rem;
-    background-color:rgba(255, 255, 255, 0.723) ;
+    background-color:rgba(255, 255, 255, 0.693) ;
     height: 35px;
     width: 35px;
     border-radius: 50%;
@@ -115,7 +117,11 @@ background-color:#21478D;
 #arrow1{
     margin-top: -1rem;
     font-size: 4rem;
-    transition: transform 0.5s ease;
+    transition: transform  0.5s ease;
+}
+
+#arrow:hover,#arrow1:hover{
+    color: white;
 }
 
 #arrow1.turn{
@@ -141,15 +147,12 @@ background-color:#21478D;
 
 
 section.work{
- background-color:#EE2525;
+ background-color:#f65151;
  position: relative;
  bottom: 25rem;
  transition: bottom 0.5s ease;
 }
-section.work.down{
-    bottom: 5rem;
-    transition: bottom 0.5s ease;
-}   
+
 .mot{
     /* border: 1px solid black; */
     display: inline-block;
@@ -163,7 +166,7 @@ section.work.down{
 section.portrait{
     position: relative;
     bottom: 40rem;
-    background-color:#36791C;
+    background-color:#a7a7a7;
     z-index: 3;
     transition: bottom 0.5s ease;       
    }
@@ -180,6 +183,29 @@ section.portrait{
 .titre1{
     font-size: 3rem;
 }
-  
 
- 
+.portrait .paragraphe{
+    font-size: 4rem;
+    display: inline;
+}
+  
+/* parti animation photo*/
+.img-presentation{
+    margin-left: 60rem;
+    display: inline-block;
+    width: 28%;
+}
+
+
+ .img-presentation img{
+    border-radius: 6px;
+    opacity: 1;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: opacity 0.4s ease;
+ }
+ .img-presentation img:hover{
+    opacity: 0.7;
+ }
+
