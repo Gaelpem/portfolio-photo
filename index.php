@@ -76,26 +76,45 @@
                  <i id= "arrow"class="bi bi-arrow-down-circle-fill"></i>
                  </div>
             </div>
-           <p class="paragraphe">Selma for <span class="white">Widempieces</span>
+
+           <p class="paragraphe">SELMA FOR  <span class="white">WIDEMPIECES</span>
+           <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorum id autem minus obcaecati deserunt modi nostrum voluptas ad amet, facere nihil veritatis dignissimos atque fugit cumque error officia incidunt.</p>
            
            <div class="img-presentation">
                 <img src="asset/img/img1.jpeg" alt="">
                 <p>[view more]</p>
                </div>
-           <div class="image-container">
 
-               <div class="img-preview"></div>
-               <div class="indicator"></div>
-               <div class="items">
-                <div class="item"><img src="" alt=""></div>
-                <div class="item"><img src="" alt=""></div>
-                <div class="item"><img src="" alt=""></div>
-                <div class="item"><img src="" alt=""></div>
-                <div class="item"><img src="" alt=""></div>
-                <div class="item"><img src="" alt=""></div>
-               </div>
-           </div>
-        </section>
+           <div class="container">
+                 
+               <div class="img-preview"><img src="asset/img/img1.jpeg" alt=""></div>
+
+                 <div class="minimap">
+
+        
+                    <div class="indicator"></div>
+                   <div class="items">
+
+                    <div class="item"><img src="asset/img/img1.jpeg" alt=""></div>
+                    <div class="item"><img src="asset/img/img2.jpeg" alt=""></div>
+                    <div class="item"><img src="asset/img/img3.jpeg" alt=""></div>
+                    <div class="item"><img src="asset/img/img4.jpeg"alt=""></div>
+                    <div class="item"><img src="asset/img/img5.jpeg" alt=""></div>
+                    <div class="item"><img src="asset/img/img6.jpeg" alt=""></div>
+                    <div class="item"><img src="asset/img/img7.jpeg" alt=""></div>
+                    <div class="item"><img src="asset/img/img8.jpeg"alt=""></div>
+
+
+                    </div>
+
+                 </div>
+                   <div class="mini-nav">
+                    <p>photographed by <span class="nom">Gaël Pembele</span></p>
+                   <span class="back">back</span>
+                   </div>
+                 
+            </div>
+        </section>  
     </main>
 
 

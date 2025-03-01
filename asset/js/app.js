@@ -22,3 +22,25 @@ work.addEventListener('click', () => {
     toggleElement(portrait, "bottom", "30rem", "40rem");
 });
 
+
+//cliquage sur la photo de presentatoion
+
+let imgPresentation = document.querySelector('.img-presentation'); 
+let container = document.querySelector('.container'); 
+let back = document.querySelector('.back'); 
+
+imgPresentation.addEventListener('click', ()=>{
+    container.classList.add('open'); 
+    container.style.display = 'block'; 
+})
+
+back.addEventListener('click', ()=>{
+    container.classList.remove('open'); 
+    container.style.display = 'none'; 
+})
+
+// animation photo
+
+let items  = document.querySelector('items'); 
+let indicator = document.
+
