@@ -58,22 +58,22 @@
 
             <div class="mot">
 
-                <p><span class="white">portraits_.</span></p>
-                <p>street-photography___.</p>
-                <p><span class="white">personals__.</span></p>
-                <p>archive————.</p>
+                <p><span class="white">fashion-</span></p>
+                <p>street-photography-</p>
+                <p><span class="white">archive-</span></p>
+              
 
             </div>
         </section>
 
         <!-- SECTION PORTRAIT-->
 
-        <section class="portrait">
+        <section class="fashion">
             <div class="entete">
-                <h1 class="titre1">———portrait_.</h1>
+                <h1 class="titre1">———fashion-[photography].</h1>
                  <div class="number-fleche">
                     <p>[001]</p>
-                 <i id= "arrow"class="bi bi-arrow-down-circle-fill"></i>
+                 <i id= "arrow2"class="bi bi-arrow-down-circle-fill"></i>
                  </div>
             </div>
 
@@ -103,7 +103,14 @@
                     <div class="item"><img src="asset/img/img6.jpeg" alt=""></div>
                     <div class="item"><img src="asset/img/img7.jpeg" alt=""></div>
                     <div class="item"><img src="asset/img/img8.jpeg"alt=""></div>
-
+                    <div class="item"><img src="asset/img/img9.jpeg"alt=""></div>
+                    <div class="item"><img src="asset/img/img10.jpeg"alt=""></div>
+                    <div class="item"><img src="asset/img/img11.jpeg"alt=""></div>
+                    <div class="item"><img src="asset/img/img12.jpeg"alt=""></div>
+                    <div class="item"><img src="asset/img/img13.jpeg"alt=""></div>
+                    <div class="item"><img src="asset/img/img14.jpeg"alt=""></div>
+                    <div class="item"><img src="asset/img/img15.jpeg"alt=""></div>
+                    <div class="item"><img src="asset/img/img16.jpeg"alt=""></div>
 
                     </div>
 
@@ -115,9 +122,52 @@
                  
             </div>
         </section>  
+
+    
+
+        <section class="street">
+            <div class="entete">
+                <h1 class="titre1">———street-[photography].</h1>
+
+                <div class="number-fleche">
+                    <p>[002]</p>
+                 </div>
+           </div>
+
+           <p class="detail">Street photography captures unique and spontaneous moments that cannot be recreated. Unlike posed photography, it reveals the true essence of people and places. The play of natural light, shadows, and reflections in the street helps create unique and dynamic photos.</p>
+
+           <div class="img-presentation1">
+                <img src="asset/img2/img1.jpeg" alt="">
+                <p>[view more]</p>
+               </div>
+
+           <div class="container1">
+            </div>
+        </section> 
     </main>
 
+    <footer>
+      <div class="information-container">
+         <div class="location">
+            <p>Location</p>
+            <p>paris,France</p>
+         </div>
 
+         <div class="info">
+         <p>Personal</p>
+         <p>[email] : pembelegael@gmail.com</p>
+         <p>[phone] : 07|69|08|86|57</p>
+         <p>[instagram] : @whvshinngton</p>
+         <p></p>
+         </div>
+   
+
+
+      </div>
+
+<h1 class="portfolio">PORTFOLIO/</h1>
+
+</footer>
     <script src="asset/js/app.js"></script>
 </body>
 </html>

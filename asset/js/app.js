@@ -2,9 +2,11 @@
 
 let about = document.querySelector('.about'); 
 let work = document.querySelector('.work'); 
-let portrait = document.querySelector('.portrait'); 
+let fashion = document.querySelector('.fashion'); 
+let street = document.querySelector('.street')
 let arrow = document.getElementById('arrow');
 let arrow1 = document.getElementById('arrow1');  
+let arrow2 = document.getElementById('arrow2');  
 
 // Fonction pour basculer la rotation et la position
 function toggleElement(element, property, value1, value2) {
@@ -14,13 +16,21 @@ function toggleElement(element, property, value1, value2) {
 about.addEventListener('click', () => {
     toggleElement(arrow, "transform", "rotate(180deg)", "rotate(0deg)");
     toggleElement(work, "bottom", "5rem", "25rem");
-    toggleElement(portrait, "bottom", "20rem", "40rem");
+    toggleElement(fashion, "bottom", "20rem", "40rem");
 });
 
 work.addEventListener('click', () => {
     toggleElement(arrow1, "transform", "rotate(180deg)", "rotate(0deg)");
-    toggleElement(portrait, "bottom", "30rem", "40rem");
+    toggleElement(fashion, "bottom", "30rem", "40rem");
 });
+
+fashion.addEventListener('click', () => {
+    toggleElement(arrow2, "transform", "rotate(180deg)", "rotate(0deg)");
+    toggleElement(street, "bottom", "40rem", "45rem");
+});
+
+
+
 
 
 //cliquage sur la photo de presentatoion
@@ -28,6 +38,7 @@ work.addEventListener('click', () => {
 let imgPresentation = document.querySelector('.img-presentation'); 
 let container = document.querySelector('.container'); 
 let back = document.querySelector('.back'); 
+
 
 imgPresentation.addEventListener('click', () => {
     container.classList.add('open'); 
