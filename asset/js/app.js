@@ -30,9 +30,6 @@ fashion.addEventListener('click', () => {
 });
 
 
-
-
-
 //cliquage sur la photo de presentatoion
 
 let imgPresentation = document.querySelector('.img-presentation'); 
@@ -51,7 +48,25 @@ back.addEventListener('click', () => {
         container.classList.remove('open'); 
     }, 500); // Attends la fin de l'animation (0.5s)
 });
+// heure
 
+const afficheHeure = () =>{
+    const $date = new Date(); 
+    let heures = $date.getHours(); 
+    let minutes = $date.getMinutes(); 
+    let secondes = $date.getSeconds(); 
+
+heures = heures < 10 ? "0" + heures : heures; 
+minutes = minutes < 10 ? "0" + minutes : minutes; 
+secondes = secondes < 10 ? "0" + secondes : secondes; 
+
+const heureActuelle = heures + ":" + minutes + ":" + secondes; 
+document.getElementById("heure").textContent = heureActuelle + " " + "Paris,Fr"
+
+setTimeout(afficheHeure, 1000); 
+}
+
+afficheHeure()
 // animation photo
 let items = document.querySelector('.items');
 let indicator = document.querySelector('.indicator');

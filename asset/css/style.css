@@ -30,6 +30,11 @@ header{
     
 }
 
+#heure{
+    font-weight: 300;
+    color:rgba(0, 0, 0, 0.696); 
+    font-size: 3.2rem;
+}
 
 nav .links{
     display: flex;
@@ -45,17 +50,17 @@ nav .links li a{
 }
 
 main{
-    min-height: 65vh;
+    min-height: 70vh;
+    height: 10%;
     max-width: 100%;
     position:relative; 
-    box-sizing: border-box;
 }
 span{
     color: white;
 }
 /* SECTION ABOUT */
 section{
-    cursor: pointer;
+ cursor: pointer;
   border-radius:17px;
   padding: 1.6rem 0;
   width: 100%;
@@ -248,29 +253,41 @@ section.street{
 
 /* footer */
 
-.tm{
-    color: rgb(175, 0, 0);
-}
+
 footer{
-   min-height: 30vh;
+    
+margin-top:-8rem;
 }
 
 .information-container{
+    bottom: -125rem;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    border: 1px solid black;
-    max-width: 100%;
+    width: 100%;
+    z-index: 20;
+}
+
+
+
+.info{
+ 
+  margin-top: 20rem;
+}
+.information-container .location{
+    font-size: 4rem;
 }
 
 footer .portfolio{
-    
-    display: inline-block;
-    border: 1px solid black;
+    margin: 0 auto;
     font-size: 18rem;
     font-weight: 300;
 }
 
+.gris{
+    color: rgba(0, 0, 0, 0.378);
+}
 
 /* parti animation photo*/
 .img-presentation{

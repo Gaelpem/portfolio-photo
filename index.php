@@ -19,7 +19,7 @@
             <p>[name] : gaël pembele</p>
         </div>
         <div class="heure">
-            <p id="heure">12:33:03 pm,</p>
+            <p id="heure"></p>
         </div>
         <nav>
             <ul class="links">
@@ -120,7 +120,6 @@
                    <span class="back">back</span>
                    </div>
                  
-            </div>
         </section>  
 
     
@@ -141,28 +140,61 @@
                 <p>[view more]</p>
                </div>
 
-           <div class="container1">
+
+               <div class="container">
+                 
+                 <div class="img-preview"><img src="asset/img/img1.jpeg" alt=""></div>
+  
+                   <div class="minimap">
+  
+          
+                      <div class="indicator"></div>
+                     <div class="items">
+
+                     <div class="item"><img src="img1.jpeg" alt=""></div>
+                     <div class="item"><img src="img2.jpeg" alt=""></div>
+                     <div class="item"><img src="img3.jpeg" alt=""></div>
+                     <div class="item"><img src="img4.jpeg" alt=""></div>
+                     <div class="item"><img src="img5.jpeg" alt=""></div>
+                     <div class="item"><img src="img6.jpeg" alt=""></div>
+                     <div class="item"><img src="img7.jpeg" alt=""></div>
+                      
+  
+                   </div>
+                     <div class="mini-nav">
+                      <p>photographed by <span class="nom">Gaël Pembele</span></p>
+                     <span class="back">back</span>
+                     </div>
+                   
+              </div>
             </div>
+
+
+
+       
         </section> 
     </main>
 
+
+
+
+
     <footer>
+        
       <div class="information-container">
          <div class="location">
             <p>Location</p>
-            <p>paris,France</p>
+            <p><span class="gris">paris,France</span></p>
          </div>
 
          <div class="info">
          <p>Personal</p>
-         <p>[email] : pembelegael@gmail.com</p>
+         <p><a href="mailto:pembelegael@gmail.com">[email] : pembelegael@gmail.com</a></p>
          <p>[phone] : 07|69|08|86|57</p>
          <p>[instagram] : @whvshinngton</p>
          <p></p>
          </div>
    
-
-
       </div>
 
 <h1 class="portfolio">PORTFOLIO/</h1>
