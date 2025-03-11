@@ -39,7 +39,7 @@
                  <i id= "arrow"class="bi bi-arrow-down-circle-fill"></i>
                  </div>
             </div>
-            <p class="paragraphe">Passionate about <span class="white">photography</span> since —2020, I started by exploring street[—]photography with a film camera, which allowed me to develop and refine my artistic vision. For <span class="white">fashion</span> / photography, I use a digital [—]camera to capture sharper and more dynamic images——————.</p>
+            <p data-splitting class="paragraphe1">Passionate about photography since —2020, I started by exploring street[—]photography with a film camera, which allowed me to develop and refine my artistic vision. For fashion / photography, I use a digital [—]camera to capture sharper and more dynamic images——————.</p>
             <p class="date">©2020</p>
         </section>
 
@@ -54,7 +54,7 @@
                  </div>
             </div>
            
-            <p class="paragraphe">As I am dedicated to conveying emotions through models & capturing the <span class="white">richness</span> of colors in my images, this style[—]allows me to fully / express my artistic vision with sensitivity & <span>creativity—————.</span></p>
+            <p class="paragraphe">As I am dedicated to conveying emotions through models & capturing the richness of colors in my images, this style[—]allows me to fully / express my artistic vision with sensitivity & creativity—————.</p>
 
             <div class="mot">
 
@@ -77,7 +77,7 @@
                  </div>
             </div>
 
-           <p class="paragraphe">SELMA FOR  <span class="white">WIDEMPIECES</span>
+
            <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorum id autem minus obcaecati deserunt modi nostrum voluptas ad amet, facere nihil veritatis dignissimos atque fugit cumque error officia incidunt.</p>
            
            <div class="img-presentation">
@@ -151,13 +151,7 @@
                       <div class="indicator"></div>
                      <div class="items">
 
-                     <div class="item"><img src="img1.jpeg" alt=""></div>
-                     <div class="item"><img src="img2.jpeg" alt=""></div>
-                     <div class="item"><img src="img3.jpeg" alt=""></div>
-                     <div class="item"><img src="img4.jpeg" alt=""></div>
-                     <div class="item"><img src="img5.jpeg" alt=""></div>
-                     <div class="item"><img src="img6.jpeg" alt=""></div>
-                     <div class="item"><img src="img7.jpeg" alt=""></div>
+    
                       
   
                    </div>
@@ -200,6 +194,13 @@
 <h1 class="portfolio">PORTFOLIO/</h1>
 
 </footer>
-    <script src="asset/js/app.js"></script>
+  
+<script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+
+<script src="asset/js/app.js"></script>
 </body>
 </html>

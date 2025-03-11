@@ -1,5 +1,6 @@
 "use strict"; 
 
+
 let about = document.querySelector('.about'); 
 let work = document.querySelector('.work'); 
 let fashion = document.querySelector('.fashion'); 
@@ -28,6 +29,40 @@ fashion.addEventListener('click', () => {
     toggleElement(arrow2, "transform", "rotate(180deg)", "rotate(0deg)");
     toggleElement(street, "bottom", "40rem", "45rem");
 });
+
+let selection = Splitting()
+
+gsap.registerPlugin(ScrollTrigger)
+
+gsap.set(selection[0].chars, { color: "rgba(0, 0, 0, 0.543)" }); // Définit le noir au départ
+gsap.to(selection[0].chars, {
+    color: "white",
+    stagger: 2,
+    scrollTrigger: {
+        trigger: ".paragraphe1",
+        markers: true,
+        start: "top 27%",
+        end: "bottom 50%",
+        scrub: true,
+    }
+});
+
+
+
+// Initialize a new Lenis instance for smooth scrolling
+const lenis = new Lenis();
+
+// Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
+lenis.on('scroll', ScrollTrigger.update);
+
+// Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
+// This ensures Lenis's smooth scroll animation updates on each GSAP tick
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+});
+
+// Disable lag smoothing in GSAP to prevent any delay in scroll animations
+gsap.ticker.lagSmoothing(0);
 
 
 //cliquage sur la photo de presentatoion
@@ -61,7 +96,7 @@ minutes = minutes < 10 ? "0" + minutes : minutes;
 secondes = secondes < 10 ? "0" + secondes : secondes; 
 
 const heureActuelle = heures + ":" + minutes + ":" + secondes; 
-document.getElementById("heure").textContent = heureActuelle + " " + "Paris,Fr"
+document.getElementById("heure").textContent = "Paris,Fr" + "——"+ heureActuelle ; 
 
 setTimeout(afficheHeure, 1000); 
 }
