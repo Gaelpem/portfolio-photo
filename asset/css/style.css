@@ -16,7 +16,6 @@ body{
     background-color:white; 
 }
 
-
 header{
     margin: 1rem auto ;
     padding: 0 3rem;
@@ -54,6 +53,7 @@ main{
     height: 10%;
     max-width: 100%;
     position:relative; 
+    z-index: 100;
 }
 span{
     color: white;
