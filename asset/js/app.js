@@ -30,38 +30,41 @@ fashion.addEventListener('click', () => {
     toggleElement(street, "bottom", "40rem", "45rem");
 });
 
-let selection = Splitting()
+
+
+// animation text
+
+let paragraphes = document.querySelectorAll('.paragraphes')
 
 gsap.registerPlugin(ScrollTrigger)
 
-gsap.set(selection[0].chars, { color: "rgba(0, 0, 0, 0.543)" }); // Définit le noir au départ
-gsap.to(selection[0].chars, {
+
+paragraphes.forEach((paragraphe, index)=>{
+
+
+    let selection = Splitting({target : paragraphe})
+
+    gsap.set(selection[0].chars, { color: "rgba(0, 0, 0, 0.340)" }); // Définit le noir au départ
+   gsap.to(selection[0].chars, {
     color: "white",
-    stagger: 2,
+    stagger: 0.05,
     scrollTrigger: {
-        trigger: ".paragraphe1",
-        markers: true,
+        trigger: paragraphe,
         start: "top 27%",
-        end: "bottom 50%",
+        end: "bottom 20%",
         scrub: true,
     }
 });
+    
+})
 
 
-
-// Initialize a new Lenis instance for smooth scrolling
 const lenis = new Lenis();
-
-// Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
 lenis.on('scroll', ScrollTrigger.update);
-
-// Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
-// This ensures Lenis's smooth scroll animation updates on each GSAP tick
 gsap.ticker.add((time) => {
-  lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+  lenis.raf(time * 1000);
 });
 
-// Disable lag smoothing in GSAP to prevent any delay in scroll animations
 gsap.ticker.lagSmoothing(0);
 
 
