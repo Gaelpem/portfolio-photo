@@ -29,7 +29,39 @@ fashion.addEventListener('click', () => {
     toggleElement(arrow2, "transform", "rotate(180deg)", "rotate(0deg)");
     toggleElement(street, "bottom", "40rem", "45rem");
 });
+// animation introduction main
+// Crée l’IntersectionObserver
+const observer = new IntersectionObserver(
+    (entries) => {
+        for (const entry of entries) {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains('main')) {
+                    entry.target.animate(
+                        [
+                            { transform: 'translateY(200px)', opacity: 0 },
+                            { transform: 'translateY(0)', opacity: 1 }
+                        ],
+                        {
+                            duration: 2000, // 2 secondes
+                            easing: 'ease-in-out',
+                            fill: 'forwards'
+                        }
+                    );
+                    observer.unobserve(entry.target); // Arrête d’observer après l’animation
+                }
+            }
+        }
+    },
+    {
+        threshold: 0.1 // Déclenche quand 10 % de <main> est visible
+    }
+);
 
+// Sélectionne <main class="main"> et observe-le
+const mainElement = document.querySelector('.main'); // Cible la classe .main
+if (mainElement) {
+    observer.observe(mainElement);
+}
 
 
 // animation text
