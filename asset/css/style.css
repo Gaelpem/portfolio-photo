@@ -81,17 +81,6 @@ background-color:#21478d95;
     font-size: 3rem;
 }
 
-.titre::after{
-    position: absolute;
-    content: "";
-    top:2.5rem; 
-    left: 17.5rem;
-    background-color:rgba(255, 255, 255, 0.693) ;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-}
-
 
 .number-fleche{
     /* border: 1px solid black; */
@@ -155,11 +144,18 @@ background-color:#21478d95;
 .paragraphes{
     /* border:1px solid black;  */
     font-size: 2.5rem;
-    width: 55%;
     font-weight: 500;
 }
 
+.para{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .separation{
+    width: 90%;
     position: relative;
     margin: 0 auto;
     padding: 2rem; 
@@ -214,13 +210,13 @@ section.fashion{
 
 footer{
     position: relative;
-    margin-top:-8rem;
+    margin-top:-12rem;
     z-index: 0;
 }
 
 .information-container{
-    padding: 1rem;
-    bottom: 25rem;
+    padding: 2%;
+    bottom: 23rem;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -243,14 +239,18 @@ footer{
     color: white;
 }
 
-footer .portfolio{
+.titre{
     position: relative;
-    margin: 0 auto;
-    font-size: 18rem;
-    font-weight: 300;
-    color: white; 
-    z-index: 20;
-    pointer-events: auto;
+    width: 100%;
+    z-index: 1;   
+}
+
+.titre .portfolio{
+    text-align: center;
+    font-size: 17.5vw;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    
 }
 
 
@@ -272,6 +272,32 @@ footer .portfolio{
 .gris{
     color: rgba(0, 0, 0, 0.378);
 }
+
+
+.decoration{
+    background-color: rgba(255, 255, 255, 0.197);
+    bottom: 2rem;
+    width: 25%;
+    position: relative;
+    left: 50%;
+    z-index: 2;
+    font-size: 2rem;
+    color:rgba(255, 255, 255, 0.609);
+}
+
+
+.decoration1{
+    width: 25%;
+    position: relative;
+    left: 60%;
+    z-index: 2;
+    font-size: 2rem;
+    color:rgba(255, 255, 255, 0.609);
+}
+
+
+
+
 
 /* parti animation photo*/
 .img-presentation{
@@ -391,9 +417,13 @@ footer .portfolio{
  .mini-nav{
     margin: 1rem auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     max-width: 90%;
     color: black;
+ }
+ .year{
+    font-size: 1.1rem;
  }
 
 
