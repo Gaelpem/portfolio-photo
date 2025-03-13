@@ -327,3 +327,31 @@ window.addEventListener('resize', () => {
 itemImage[0].style.opacity = activeOpacity;
 updatePreviewImage(0);
 animate();
+
+
+//titre portfolio
+
+// Sélectionne le premier élément .portfolio
+let portfolio = document.querySelector('.portfolio'); // Note : querySelector, pas querySelectorAll
+
+// Anime l’élément .portfolio avec GSAP
+gsap.fromTo(
+    portfolio, // Cible l’élément portfolio
+    {
+        y: -100, // Départ : 100px en bas
+        opacity: 0 // Invisible
+    },
+    {
+        y: 0, // Arrivée : position normale
+        opacity: 1, // Visible
+        duration: 2, // Durée de l’animation (1 seconde)
+        ease: "ease-in-out", // Courbe fluide
+        scrollTrigger: {
+            trigger: portfolio, // Déclencheur : cet élément .portfolio
+            start: "top 80%", // Commence quand le haut atteint 80%
+            end: "bottom 90%", // Finit quand le bas atteint 20%
+            scrub: true, // Suit le défilement
+        
+        }
+    }
+);
