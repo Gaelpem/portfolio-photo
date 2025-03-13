@@ -68,6 +68,51 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
+//animation footer
+// Enregistre ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+// Sélectionne tous les éléments .demo
+let demo = document.querySelectorAll('.demo');
+
+// Parcourt chaque élément .demo
+demo.forEach((demos, index) => {
+    // Récupère et découpe le texte de l’élément actuel
+    const srtText = demos.textContent;
+    const splitText = srtText.split('');
+    demos.textContent = ""; // Vide l’élément actuel
+
+    // Ajoute les <span> pour chaque lettre
+    for (let i = 0; i < splitText.length; i++) {
+        demos.innerHTML += "<span>" + splitText[i] + "</span>";
+    }
+
+    // Anime les <span> de cet élément avec GSAP
+    gsap.fromTo(
+        demos.querySelectorAll('span'), // Cible les <span> de cet élément
+        {
+            y: 50, // Départ : 50px en bas
+            opacity: 0 // Invisible
+        },
+        {
+            y: 0, // Arrivée : position normale
+            opacity: 1, // Visible
+            stagger: 0.05, // Décalage entre lettres
+            duration: 1, // Durée par lettre
+            ease: "ease-in-out",
+            scrollTrigger: {
+                trigger: demos, // Déclencheur : cet élément .demo
+                start: "top 80%",
+                end: "bottom 60%",
+                scrub: true,
+                markers: false // Pour déboguer
+            }
+        }
+    );
+});
+
+
+
 
 //cliquage sur la photo de presentatoion
 
