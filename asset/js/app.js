@@ -4,10 +4,8 @@
 let about = document.querySelector('.about'); 
 let work = document.querySelector('.work'); 
 let fashion = document.querySelector('.fashion'); 
-let street = document.querySelector('.street')
 let arrow = document.getElementById('arrow');
 let arrow1 = document.getElementById('arrow1');  
-let arrow2 = document.getElementById('arrow2');  
 
 // Fonction pour basculer la rotation et la position
 function toggleElement(element, property, value1, value2) {
@@ -25,10 +23,6 @@ work.addEventListener('click', () => {
     toggleElement(fashion, "bottom", "30rem", "40rem");
 });
 
-fashion.addEventListener('click', () => {
-    toggleElement(arrow2, "transform", "rotate(180deg)", "rotate(0deg)");
-    toggleElement(street, "bottom", "40rem", "45rem");
-});
 // animation introduction main
 // Crée l’IntersectionObserver
 // Crée l’IntersectionObserver
@@ -41,7 +35,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 paragraphes.forEach((paragraphe, index)=>{
-
 
     let selection = Splitting({target : paragraphe})
 
