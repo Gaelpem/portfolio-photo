@@ -69,7 +69,7 @@ section{
 }
 
 section.about{
-background-color:#21478d95;
+background-color:#9c9c9c95;
 }  
 
 
@@ -128,22 +128,9 @@ background-color:#21478d95;
 }
 
 
-#arrow2{
-    opacity: 1;
-    margin-top: -1rem;
-    font-size: 4rem;
-    transition: transform  0.5s ease;
-
-}
-
-#arrow2.turn{
-    transform : rotate(180deg); 
-    transition: transform 0.5s ease;
-}
-
-    
-#arrow:hover,#arrow1:hover,#arrow2:hover{
-    color: white;
+.entete2{
+    display: flex;
+    flex-direction: column;
 }
 
 .paragraphes{
@@ -173,7 +160,7 @@ background-color:#21478d95;
 
 
 .date{
-    margin-left: 60rem;
+    margin-left: 55rem;
     font-size: 11rem;
     /*border:1px solid black;*/
     height: 250px;
@@ -181,7 +168,7 @@ background-color:#21478d95;
 
 
 section.work{
- background-color:#f65151;
+ background-color:#696969;
  position: relative;
  bottom: 25rem;
  transition: bottom 0.5s ease;
@@ -200,7 +187,7 @@ section.work{
 section.fashion{
     position: relative;
     bottom: 40rem;
-    background-color:#a7a7a7;
+    background-color:#3e3e3e;
     z-index: 3;
     transition: bottom 0.5s ease;       
    }
